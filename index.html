@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Teko&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Squada+One&display=swap" rel="stylesheet">
+    <title>RPS</title>
+</head>
+<body>
+
+    <div id="main_container">
+
+        <div id="main_content">
+
+
+            <div id="game_header">
+                <h1 id="rps">Rock - Paper - Scissors</h1>
+                <h3>Beat the Computer !</h3>
+                <button id="startgame" onClick="gameStart('start')"></button>
+            </div>  
+            
+            <div id="input_name">
+                
+                    <input type="text" name="" id="playername" placeholder="player name">
+                    <input type="submit" id="player_submit" onClick="playNow('start')">
+                  
+                                 
+            </div>
+
+            <div id="player_choice">
+                
+                <h3 id="player_info"></h3>
+                <img src="/RPS/img/paper2.jpg" alt="paper" id="paper" width="150" height="150" onClick="playerChoice('paper')" >               
+                <img src="/RPS/img/rock2.jpg" alt="rock" id="rock" width="150" height="150" onClick="playerChoice('rock')">                             
+                <img src="/RPS/img/scissor2.jpg" alt="scissors" id="scissors" width="150" height="150" onClick="playerChoice('scissors')">
+                <!-- <button id="paper" onClick="playerChoice('paper')"><img src="/RPS/img/paper2.jpg" alt="paper"  width="150" height="150"  ></button>               
+                <button id="rock" onClick="playerChoice('rock')"><img src="/RPS/img/rock2.jpg" alt="rock"  width="150" height="150" ></button>                             
+                <button id="scissors" onClick="playerChoice('scissors')"><img src="/RPS/img/scissor2.jpg" alt="scissors"  width="150" height="150" ></button> -->
+
+
+            </div>
+
+            <div id="end_game">
+                <h3 id="endmsg"></h3>
+                <h3 id="lose"></h3>
+                <button id="play_again" onClick="playAgain('start')"></button>
+            </div>
+
+        </div>    
+
+    </div>
+
+    <script src="/RPS/rps.js"></script>
+    <!-- <script src="/RPS/test.js"> </script> -->
+    
+</body>
+</html>
